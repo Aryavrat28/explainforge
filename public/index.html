@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExplainForge</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main>
+  <header>
+    <small>LOCAL AI · QVAC</small>
+    <h1>ExplainForge</h1>
+    <p>Turn complicated text into simple explanations.</p>
+  </header>
+
+  <section class="card">
+    <label>Text to explain</label>
+    <textarea id="text" rows="10" placeholder="Paste a concept, paragraph, or technical explanation..."></textarea>
+
+    <label>Audience</label>
+    <select id="level">
+      <option>Beginner</option>
+      <option selected>Student</option>
+      <option>Advanced</option>
+    </select>
+
+    <div class="buttons">
+      <button id="example">Load Example</button>
+      <button id="explain">Explain</button>
+    </div>
+
+    <p id="status"></p>
+  </section>
+
+  <section id="results" class="hidden">
+    <div class="card">
+      <h2>Explanation</h2>
+      <p id="explanation"></p>
+    </div>
+
+    <div class="card">
+      <h2>Key Points</h2>
+      <ul id="keyPoints"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Example</h2>
+      <p id="exampleText"></p>
+    </div>
+
+    <div class="card">
+      <h2>One-Line Takeaway</h2>
+      <p id="takeaway"></p>
+    </div>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
